@@ -1,0 +1,7 @@
+const deleteButton = document.createElement("button");
+deleteButton.textContent = "Delete";
+
+deleteButton.onclick = function() {
+    task.remove();
+};
+task.appendChild(deleteButton);
