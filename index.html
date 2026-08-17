@@ -1,19 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IB To-Do Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>IB To-Do Tracker</h1>
 
-    <input id="taskInput" type="text" placeholder="Enter an IB task">
-    <button onclick="addTask()">Add Task</button>
+    <div class="container">
 
-    <ul id="taskList"></ul>
+        <h1>IB To-Do Tracker</h1>
+        <p>Keep track of your IB tasks and assignments.</p>
 
-    <script>
-        // JavaScript will go here
-    </script>
+        <div class="add-task">
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter a task..."
+            >
+
+            <button onclick="addTask()">Add Task</button>
+        </div>
+
+        <h2>My Tasks</h2>
+
+        <ul id="taskList"></ul>
+
+    </div>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
