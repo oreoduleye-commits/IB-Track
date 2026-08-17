@@ -5,6 +5,10 @@ function addTask() {
     if (taskText === "") {
         return;
     }
+    <form onsubmit="event.preventDefault(); addTask()">
+    <input id="taskInput" type="text" placeholder="Enter an IB task" required>
+    <button type="submit">Add Task</button>
+</form>
 
     const task = document.createElement("li");
 
